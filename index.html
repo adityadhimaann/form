@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <form action="register.php" method="post">
+    <style>
+        body {
+            background: url(https://png.pngtree.com/thumb_back/fh260/background/20200801/pngtree-purple-abstract-background-fluid-gradient-with-wave-forms-image_375467.jpg) no-repeat center/cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+            letter-spacing: 2px;
+            padding-block: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+            margin: auto;
+            text-transform: uppercase;
+            color: white;
+        }
+        form {
+            color: white;
+            text-transform: uppercase;
+            display: inline-block;
+            width: 400px;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px white;
+        }
+        input, .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px white;
+            background: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .gender-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Registration Form</h2><br>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+        <label>Gender:</label>
+        <div class="gender-container">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender" required> Female</label>
+        </div>
+        <input class="submit-btn" type="submit" value="Submit"><br>
+        <input class="submit-btn" type="reset" value="Reset">
+    </form>
+</body>
+</html>
